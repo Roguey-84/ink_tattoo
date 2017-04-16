@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@font-face {
+  src: url('../fonts/times.ttf');
+  font-family: "TimesNewRomanR";
+}
+@font-face {
+  src: url('../fonts/timesbd.ttf');
+  font-family: "TimesNewRomanB";
+}
+@font-face {
+  src: url('../fonts/timesbi.ttf');
+  font-family: "TimesNewRomanBI";
+}
+@font-face {
+  src: url('../fonts/timesi.ttf');
+  font-family: "TimesNewRomanI";
+}

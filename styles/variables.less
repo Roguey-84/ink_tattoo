@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@font-face {
+  src: url('../fonts/times.ttf');
+  font-family: "TimesNewRomanR";
+}
+@font-face {
+  src: url('../fonts/timesbd.ttf');
+  font-family: "TimesNewRomanB";
+}
+@font-face {
+  src: url('../fonts/timesbi.ttf');
+  font-family: "TimesNewRomanBI";
+}
+@font-face {
+  src: url('../fonts/timesi.ttf');
+  font-family: "TimesNewRomanI";
+}
+
+@mainFont: TimesNewRomanR, serif;
+@headlineFont: TimesNewRomanB, serif;
+@mainColor: #000000;
+@menuColor: #1a1a1a;
+@mainButtonColor: #01000000;
+@mainButtonBorder: #121212;
+@formColor: #333333;
+@buttonBackground: #9a977a;
+@buttonColor: #ffffff;
+@aboutBackgroung: #f2efe5;
+@teamBackground: #ccc8b6;
+@galleryBackground: #afac9c;
+@formBackground: #e7e5d0;
+@footerBackground: #aeaeae;
+@opinionColor: #f2efe5;
+@aboutMask: rgba(204,200,182,0.66);
+@galleryMask: rgba(154,151,122,0.6);
+
+.mainButton(@mainColor, @hoverColor) {
+  width: 280px;
+  height: 80px;
+  color: @mainButtonColor;
+  border: 10px solid @mainButtonBorder;
+  background: transparent;
+  &:hover {
+    color: @buttonColor;
+    border-color: @opinionColor;
+  }
+}
+
+.respond-to (@device, @content) {
+  & when (@device = phones) {
+    @media all and (max-width: 479px) {@content();}
+  }
+  & when (@device = wide-phones) {
+    @media all and (min-width: 480px) and (max-width: 767px) {@content();}
+  }
+  & when (@device = tablets) {
+    @media all and (min-width: 768px) and (max-width: 952px) {@content();}
+  }
+  & when (@device = small-desktops) {
+    @media all and (min-width: 953px) and (max-width: 1199px) {@content();}
+  }
+  & when (@device = lg-desktops) {
+    @media all and (min-width: 1200px) and (max-width: 1440px) {@content();}
+  }
+  & when (@device = xlg-desktops) {
+    @media all and (min-width: 1441px) and (max-width: 1920px) {@content();}
+  }
+  & when (@device = wide-desktops) {
+    @media all and (min-width: 1921px) and (max-width: 2570px) {@content();}
+  }
+  & when (@device = xwide-desktops) {
+    @media all and (min-width: 2571px) {@content();}
+  }
+}
