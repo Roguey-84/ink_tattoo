@@ -19,6 +19,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  float: left;
   width: 100%;
 }
 .container-fluid {
@@ -30,6 +31,20 @@ ul {
   list-style-type: none;
   z-index: 2;
 }
+.navbar {
+  background: transparent;
+  border: none;
+  width: 55%;
+  margin: 0 auto;
+  padding-top: 69px;
+}
+.logo {
+  background: url("../img/ink_tattoo_logo.png");
+  width: 260px;
+  height: 137px;
+  margin: -92px auto;
+  z-index: 0;
+}
 header {
   margin: 0;
   padding: 0;
@@ -37,16 +52,10 @@ header {
   height: 500px;
   background: #ccc8b6 url("../img/slide_1.jpg") center no-repeat;
 }
-header .navbar {
-  background: transparent;
-  border: none;
-  width: 55%;
-  margin: 0 auto;
-  padding-top: 69px;
+main .galleryName,
+main .galleryPhoto {
+  float: left;
 }
-header .logo {
-  width: 260px;
-  height: 137px;
-  margin: -92px auto;
-  z-index: 0;
+.navigation {
+  height: 180px;
 }
