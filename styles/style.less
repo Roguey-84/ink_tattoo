@@ -76,6 +76,14 @@ main {
     background: @aboutBackground;
     text-align: center;
     padding: 0;
+    &.aboutFill-video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        .mainButton(@mainButtonColor, @hoverColor);
+      }
+    }
     .tattooIcon {
       margin-top: 92px;
       padding: 0 145px 0 85px;
@@ -116,7 +124,7 @@ main {
         top: 0;
         left: 0;
         background: @aboutMask;
-        //opacity: 0;
+        opacity: 0;
         transition: 0.3s ease-in-out;
         display: flex;
         flex-direction: column;
@@ -142,6 +150,27 @@ main {
           //  //padding: 30px 17px 0 17px;
           //}
         }
+      }
+    }
+  }
+  .opinion {
+    height: 350px;
+    background: url("../img/opinion_bg.jpg") no-repeat;
+    background-size: cover;
+    color: @opinionColor;
+    font: 700 italic 24px @mainFont;
+    position: relative;
+    .quote {
+      position: absolute;
+      font-size: 150px;
+      font-weight: 300;
+      &.quote_left {
+        left: 297px;
+        top: 74px;
+      }
+      &.quote_right {
+        right: 313px;
+        top: 86px;
       }
     }
   }

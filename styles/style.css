@@ -66,6 +66,26 @@ main .aboutFill {
   text-align: center;
   padding: 0;
 }
+main .aboutFill.aboutFill-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .aboutFill.aboutFill-video a {
+  font: 700 36px "Times New Roman", serif;
+  text-transform: uppercase;
+  line-height: 80px;
+  display: block;
+  width: 300px;
+  height: 100px;
+  color: #010000;
+  border: 10px solid #121212;
+  background: transparent;
+}
+main .aboutFill.aboutFill-video a:hover {
+  color: #737058;
+  border-color: #f2efe5;
+}
 main .aboutFill .tattooIcon {
   margin-top: 92px;
   padding: 0 145px 0 85px;
@@ -106,6 +126,7 @@ main .aboutPhotos .photoAbout .maskAbout {
   top: 0;
   left: 0;
   background: rgba(204, 200, 182, 0.66);
+  opacity: 0;
   transition: 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -127,6 +148,27 @@ main .aboutPhotos .photoAbout .maskAbout a {
 }
 main .aboutPhotos .photoAbout .maskAbout a:hover {
   color: #737058;
+}
+main .opinion {
+  height: 350px;
+  background: url("../img/opinion_bg.jpg") no-repeat;
+  background-size: cover;
+  color: #f2efe5;
+  font: 700 italic 24px "Times New Roman", serif;
+  position: relative;
+}
+main .opinion .quote {
+  position: absolute;
+  font-size: 150px;
+  font-weight: 300;
+}
+main .opinion .quote.quote_left {
+  left: 297px;
+  top: 74px;
+}
+main .opinion .quote.quote_right {
+  right: 313px;
+  top: 86px;
 }
 main .galleryName,
 main .galleryPhoto {

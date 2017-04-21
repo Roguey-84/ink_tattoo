@@ -19,9 +19,13 @@
 @galleryMask: rgba(154,151,122,0.6);
 @hoverColor: #737058;
 
-.mainButton(@mainColor, @hoverColor) {
-  width: 280px;
-  height: 80px;
+.mainButton(@mainButtonColor, @buttonColor) {
+  font: 700 36px @mainFont;
+  text-transform: uppercase;
+  line-height: 80px;
+  display: block;
+  width: 300px;
+  height: 100px;
   color: @mainButtonColor;
   border: 10px solid @mainButtonBorder;
   background: transparent;
